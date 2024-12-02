@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  #get "pages/home"
- # get "pages/projects"
+  # get "pages/home"
+  # get "pages/projects"
   get "pages/contact"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   # Defines the root path route ("/")
-   root "pages#index"
+  root "pages#home"
   get "/projects" ,  to:"pages#projects", as:"projects"
 end
